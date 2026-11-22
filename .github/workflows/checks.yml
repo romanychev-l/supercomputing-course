@@ -26,14 +26,14 @@ jobs:
       - name: Install compilers and MPI
         run: |
           sudo apt-get update
-          sudo apt-get install -y build-essential mpich libmpich-dev
+          sudo apt-get install -y build-essential openmpi-bin libopenmpi-dev
       - name: Build and check serial, OpenMP, MPI and DCMT
         env:
-          MPIEXEC: /usr/bin/mpiexec.mpich
+          MPIEXEC: /usr/bin/mpiexec.openmpi --oversubscribe
         run: |
-          /usr/bin/mpicc.mpich -show
-          /usr/bin/mpiexec.mpich --version
-          make practice MPICC=/usr/bin/mpicc.mpich
+          /usr/bin/mpicc.openmpi --showme
+          /usr/bin/mpiexec.openmpi --version
+          make practice MPICC=/usr/bin/mpicc.openmpi
 
   latex:
     runs-on: ubuntu-24.04

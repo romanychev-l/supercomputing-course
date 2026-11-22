@@ -38,13 +38,15 @@ python3 Инструменты/verify_dcmt.py
 
 Можно собирать отдельно: `make serial`, `make openmp`, `make mpi`, `make dcmt`. Если MPI отсутствует, `python3 Инструменты/verify.py --serial-only` явно проверяет только последовательную часть и Python-эталоны, а не весь курс. DCMT поставляется с исходниками и лицензией в «Внешние_библиотеки»; цель dcmt собирает её автоматически.
 
-Если установлено несколько MPI-реализаций, выбирайте wrapper и launcher одной реализации явно. Например, для пакетов MPICH в Ubuntu/Debian из этой папки:
+Если установлено несколько MPI-реализаций, выбирайте wrapper и launcher одной реализации явно. Например, для пакетов OpenMPI в Ubuntu/Debian из этой папки:
 
 ```sh
-MPIEXEC=/usr/bin/mpiexec.mpich make check MPICC=/usr/bin/mpicc.mpich
+MPIEXEC=/usr/bin/mpiexec.openmpi make check MPICC=/usr/bin/mpicc.openmpi
 ```
 
-После смены MPI пересоберите MPI-бинарники (`make -B mpi MPICC=/usr/bin/mpicc.mpich`). Смешение wrapper и launcher может приводить к запуску отдельных однопроцессных MPI-миров вместо одного общего мира; проверка числа процессов должна обнаруживать такую ошибку, а не пропускаться. Именно эту пару инструментов явно использует CI.
+После смены MPI пересоберите MPI-бинарники (`make -B mpi MPICC=/usr/bin/mpicc.openmpi`). Смешение wrapper и launcher может приводить к запуску отдельных однопроцессных MPI-миров вместо одного общего мира; проверка числа процессов должна обнаруживать такую ошибку, а не пропускаться. CI использует OpenMPI с `--oversubscribe`, поскольку малые проверки запускают до 4 процессов на runner с меньшим числом доступных ядер. Эти запуски проверяют корректность, а не ускорение.
+
+В первом CI на Ubuntu 24.04 с MPICH 4.2.0-5build3 воспроизвелась известная ошибка пакета: каждый процесс видит отдельный мир размера 1 даже с согласованными wrapper/launcher. См. [отчёт в runner-images](https://github.com/actions/runner-images/issues/13204) и [ошибку Ubuntu](https://bugs.launchpad.net/ubuntu/+source/mpich/+bug/2072338). Поэтому для этого Linux-маршрута выбран OpenMPI; это не ограничение учебных MPI-программ.
 
 На Mac команда gcc может означать Apple Clang. Нужны совместимая OpenMP-библиотека и одна MPI-реализация; пути задаются через CC/CXX/MPICC/OMPFLAGS в make. Пример при уже установленных Homebrew libomp/mpich:
 

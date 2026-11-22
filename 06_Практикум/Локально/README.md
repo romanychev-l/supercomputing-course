@@ -14,12 +14,12 @@
 
 ```sh
 sudo apt update
-sudo apt install build-essential python3 mpich libmpich-dev
+sudo apt install build-essential python3 openmpi-bin libopenmpi-dev
 ```
 
-Не нужно одновременно ставить вторую MPI-реализацию ради курса. Если на машине уже есть Open MPI, используйте её согласованные mpicc/mpiexec и документируйте выбор. Наличие другого MPI не является ошибкой само по себе.
+Не нужно одновременно ставить вторую MPI-реализацию ради курса. Если на машине уже есть исправная MPICH, используйте её согласованные mpicc/mpiexec и документируйте выбор. Наличие другого MPI не является ошибкой само по себе. Для Ubuntu 24.04 учтите [известную ошибку пакета MPICH 4.2.0-5build3](https://github.com/actions/runner-images/issues/13204): два процесса могут оба увидеть ранг 0 в мире размера 1. В Linux-инструкции и CI поэтому используем OpenMPI.
 
-Источники пакетов: [Ubuntu: MPICH](https://packages.ubuntu.com/mpich), [Debian: MPICH](https://packages.debian.org/mpich). Это инструкция подготовки; Linux-сборка данной версии комплекта на машине аудитории ещё должна быть выполнена преподавателем.
+Источники пакетов: [Ubuntu: OpenMPI](https://packages.ubuntu.com/noble/openmpi-bin), [Debian: OpenMPI](https://packages.debian.org/openmpi-bin). Проверка на машине аудитории остаётся отдельным шагом; Linux-проверка GitHub Actions не подтверждает конфигурацию каждого компьютера.
 
 ## Windows
 
@@ -68,6 +68,8 @@ MPI, на всех подготовленных системах:
 mpicc -O2 -Wall -Wextra Локально/hello_mpi.c -o hello_mpi
 mpiexec -n 2 ./hello_mpi
 ```
+
+Если OpenMPI сообщает, что процессов больше доступных слотов, для этих малых проверок используйте `mpiexec --oversubscribe -n 2 ./hello_mpi`. Это позволяет проверить обмены на одном ядре; измерять ускорение в таком режиме не следует.
 
 Ожидаются ранги 0 и 1 из двух процессов; имя компьютера обычно одинаковое. Строки могут появиться в разном порядке. [Документация MPICH mpiexec](https://www.mpich.org/static/docs/latest/www1/mpiexec.html) описывает запуск процессов. Здесь не требуется hostfile или удалённый вход. Запускать нужно под обычной учётной записью пользователя.
 

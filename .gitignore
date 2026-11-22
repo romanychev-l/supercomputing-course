@@ -18,6 +18,8 @@ __pycache__/
 *.so
 *.dylib
 *.exe
+/06_Практикум/hello_mpi
+/06_Практикум/hello_openmp
 /06_Практикум/Внешние_библиотеки/dcmt0.6.2/example/example1
 /06_Практикум/Внешние_библиотеки/dcmt0.6.2/example/example2
 /06_Практикум/Внешние_библиотеки/dcmt0.6.2/example/example3
