@@ -21,7 +21,9 @@ def require(condition, message):
 
 
 manifest = json.loads((ROOT / "04_Источники/manifest.json").read_text())
-for item in manifest["files"]:
+additional = json.loads((ROOT / "04_Источники/additional_manifest.json").read_text())
+originals = manifest["files"] + additional["files"]
+for item in originals:
     path = ROOT / item["path"]
     require(path.is_file(), f"Missing original: {item['path']}")
     if path.is_file():
@@ -85,5 +87,5 @@ require(len({t["id"] for t in tasks}) == len(tasks), "Duplicate task IDs")
 if errors:
     print("FAILED:\n" + "\n".join(f"- {e}" for e in errors))
     sys.exit(1)
-print(f"PASS: {len(manifest['files'])} original hashes; {len(materials)} topics; "
+print(f"PASS: {len(originals)} original hashes; {len(materials)} topics; "
       f"{markdown_count} Markdown files; {link_count} local links; 15 practices")
