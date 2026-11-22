@@ -1,0 +1,82 @@
+[
+  {
+    "id": "latex-01-history",
+    "number": 1,
+    "url": "https://github.com/romanychev-l/supercomputing-course/issues/1"
+  },
+  {
+    "id": "latex-02-architecture",
+    "number": 2,
+    "url": "https://github.com/romanychev-l/supercomputing-course/issues/2"
+  },
+  {
+    "id": "latex-03-networks",
+    "number": 3,
+    "url": "https://github.com/romanychev-l/supercomputing-course/issues/3"
+  },
+  {
+    "id": "latex-04-openmp",
+    "number": 4,
+    "url": "https://github.com/romanychev-l/supercomputing-course/issues/4"
+  },
+  {
+    "id": "latex-05-design",
+    "number": 5,
+    "url": "https://github.com/romanychev-l/supercomputing-course/issues/5"
+  },
+  {
+    "id": "latex-06-mpi-basics",
+    "number": 6,
+    "url": "https://github.com/romanychev-l/supercomputing-course/issues/6"
+  },
+  {
+    "id": "latex-07-mpi-types",
+    "number": 7,
+    "url": "https://github.com/romanychev-l/supercomputing-course/issues/7"
+  },
+  {
+    "id": "latex-08-mpi-topologies",
+    "number": 8,
+    "url": "https://github.com/romanychev-l/supercomputing-course/issues/8"
+  },
+  {
+    "id": "latex-09-openmp-handout",
+    "number": 9,
+    "url": "https://github.com/romanychev-l/supercomputing-course/issues/9"
+  },
+  {
+    "id": "latex-10-mpi-handout",
+    "number": 10,
+    "url": "https://github.com/romanychev-l/supercomputing-course/issues/10"
+  },
+  {
+    "id": "theory-audit",
+    "number": 11,
+    "url": "https://github.com/romanychev-l/supercomputing-course/issues/11"
+  },
+  {
+    "id": "practice-portability",
+    "number": 12,
+    "url": "https://github.com/romanychev-l/supercomputing-course/issues/12"
+  },
+  {
+    "id": "practice-edge-cases",
+    "number": 13,
+    "url": "https://github.com/romanychev-l/supercomputing-course/issues/13"
+  },
+  {
+    "id": "intro-bsp",
+    "number": 14,
+    "url": "https://github.com/romanychev-l/supercomputing-course/issues/14"
+  },
+  {
+    "id": "onboarding-feedback",
+    "number": 15,
+    "url": "https://github.com/romanychev-l/supercomputing-course/issues/15"
+  },
+  {
+    "id": "course-coordination",
+    "number": 16,
+    "url": "https://github.com/romanychev-l/supercomputing-course/issues/16"
+  }
+]

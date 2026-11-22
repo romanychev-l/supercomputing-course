@@ -15,27 +15,27 @@
 
 | ID задачи | Тема | Страниц |
 | --- | --- | ---: |
-| `latex-01-history` | История и рейтинги | 96 |
-| `latex-02-architecture` | Архитектуры и память | 29 |
-| `latex-03-networks` | Сети и ускорение | 19 |
-| `latex-04-openmp` | OpenMP | 78 |
-| `latex-05-design` | Проектирование параллельных алгоритмов | 43 |
-| `latex-06-mpi-basics` | MPI: основы | 60 |
-| `latex-07-mpi-types` | MPI: обмены и типы | 50 |
-| `latex-08-mpi-topologies` | MPI: коммуникаторы и топологии | 33 |
-| `latex-09-openmp-handout` | Текстовое пособие OpenMP | 49 |
-| `latex-10-mpi-handout` | Текстовое пособие MPI | 35 |
+| [#1](https://github.com/romanychev-l/supercomputing-course/issues/1) · `latex-01-history` | История и рейтинги | 96 |
+| [#2](https://github.com/romanychev-l/supercomputing-course/issues/2) · `latex-02-architecture` | Архитектуры и память | 29 |
+| [#3](https://github.com/romanychev-l/supercomputing-course/issues/3) · `latex-03-networks` | Сети и ускорение | 19 |
+| [#4](https://github.com/romanychev-l/supercomputing-course/issues/4) · `latex-04-openmp` | OpenMP | 78 |
+| [#5](https://github.com/romanychev-l/supercomputing-course/issues/5) · `latex-05-design` | Проектирование параллельных алгоритмов | 43 |
+| [#6](https://github.com/romanychev-l/supercomputing-course/issues/6) · `latex-06-mpi-basics` | MPI: основы | 60 |
+| [#7](https://github.com/romanychev-l/supercomputing-course/issues/7) · `latex-07-mpi-types` | MPI: обмены и типы | 50 |
+| [#8](https://github.com/romanychev-l/supercomputing-course/issues/8) · `latex-08-mpi-topologies` | MPI: коммуникаторы и топологии | 33 |
+| [#9](https://github.com/romanychev-l/supercomputing-course/issues/9) · `latex-09-openmp-handout` | Текстовое пособие OpenMP | 49 |
+| [#10](https://github.com/romanychev-l/supercomputing-course/issues/10) · `latex-10-mpi-handout` | Текстовое пособие MPI | 35 |
 
 См. [порядок переноса и приёмку](08_LaTeX/README.md). Завершённым считается содержательно и визуально проверенный редактируемый документ; пустой шаблон и набор картинок исходного PDF не закрывают задачу.
 
 ## Другие задачи для класса
 
-- [ ] `theory-audit` — Проверить формулы и ограничения моделей в теории.
-- [ ] `practice-portability` — Пройти все 15 практик с чистого компьютера и уточнить инструкции.
-- [ ] `practice-edge-cases` — Дополнить проверки практикума независимыми граничными случаями.
-- [ ] `intro-bsp` — Подготовить редактируемые слайды к дополнениям курса.
-- [ ] `onboarding-feedback` — Улучшить первый вход в Git, LaTeX и работу с агентом.
-- [ ] `course-coordination` — Преподавателю: согласовать лицензию, доступ и кластерные ограничения.
+- [ ] [#11](https://github.com/romanychev-l/supercomputing-course/issues/11) · `theory-audit` — Проверить формулы и ограничения моделей в теории.
+- [ ] [#12](https://github.com/romanychev-l/supercomputing-course/issues/12) · `practice-portability` — Пройти все 15 практик с чистого компьютера и уточнить инструкции.
+- [ ] [#13](https://github.com/romanychev-l/supercomputing-course/issues/13) · `practice-edge-cases` — Дополнить проверки практикума независимыми граничными случаями.
+- [ ] [#14](https://github.com/romanychev-l/supercomputing-course/issues/14) · `intro-bsp` — Подготовить редактируемые слайды к дополнениям курса.
+- [ ] [#15](https://github.com/romanychev-l/supercomputing-course/issues/15) · `onboarding-feedback` — Улучшить первый вход в Git, LaTeX и работу с агентом.
+- [ ] [#16](https://github.com/romanychev-l/supercomputing-course/issues/16) · `course-coordination` — Преподавателю: согласовать лицензию, доступ и кластерные ограничения.
 
 ## Как выбрать работу
 
