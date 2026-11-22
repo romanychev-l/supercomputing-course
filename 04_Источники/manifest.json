@@ -1,0 +1,164 @@
+{
+  "source": "https://gridlab.apmath.spbu.ru/3xx-hpc-2025/",
+  "files": [
+    {
+      "path": "01_Лекции_СПбГУ/hpc-lec01-02.pdf",
+      "bytes": 6969036,
+      "sha256": "94a471e94d777b5f03ee5f1ef9f2929ab1420b5421b7d2f624adc620b1593ed6",
+      "downloaded_at": "2026-10-15T12:05:22.656490+00:00",
+      "last_modified": null,
+      "kind": "lecture",
+      "source_url": "https://gridlab.apmath.spbu.ru/3xx-hpc-2025/hpc-lec01-02.pdf",
+      "last_modified_as_listed": "08-Sep-2025 08:11",
+      "listed_bytes": 6969036,
+      "pdf_pages": 96
+    },
+    {
+      "path": "01_Лекции_СПбГУ/hpc-lec03.pdf",
+      "bytes": 1271722,
+      "sha256": "90968ff8bfbd05a7c80b7d2880a05110bcbcd2cf27a0080601b752684f4d2e97",
+      "downloaded_at": "2026-10-15T12:05:22.645637+00:00",
+      "last_modified": null,
+      "kind": "lecture",
+      "source_url": "https://gridlab.apmath.spbu.ru/3xx-hpc-2025/hpc-lec03.pdf",
+      "last_modified_as_listed": "13-Sep-2024 19:33",
+      "listed_bytes": 1271722,
+      "pdf_pages": 29
+    },
+    {
+      "path": "01_Лекции_СПбГУ/hpc-lec04.pdf",
+      "bytes": 998039,
+      "sha256": "6e9ce1a4e9a36652aba62ea94b93f344af9ebe88e34bcc9dcc360e564bcd2e8f",
+      "downloaded_at": "2026-10-15T12:05:22.647157+00:00",
+      "last_modified": null,
+      "kind": "lecture",
+      "source_url": "https://gridlab.apmath.spbu.ru/3xx-hpc-2025/hpc-lec04.pdf",
+      "last_modified_as_listed": "26-Sep-2023 14:15",
+      "listed_bytes": 998039,
+      "pdf_pages": 19
+    },
+    {
+      "path": "01_Лекции_СПбГУ/hpc-lec05-openmp-text.pdf",
+      "bytes": 812553,
+      "sha256": "1af94eb7c1dc9d540baf67a9eca676c467f687dec88406f93c2e078bb46e965d",
+      "downloaded_at": "2026-10-15T12:05:22.647053+00:00",
+      "last_modified": null,
+      "kind": "lecture",
+      "source_url": "https://gridlab.apmath.spbu.ru/3xx-hpc-2025/hpc-lec05-openmp-text.pdf",
+      "last_modified_as_listed": "28-Sep-2025 22:00",
+      "listed_bytes": 812553,
+      "pdf_pages": 49
+    },
+    {
+      "path": "01_Лекции_СПбГУ/hpc-lec05-openmp.pdf",
+      "bytes": 2036528,
+      "sha256": "fcdf9ea9461007b21d57da87cabef0aeaf1f8d19e076483164ec59896141648d",
+      "downloaded_at": "2026-10-15T12:05:22.652913+00:00",
+      "last_modified": null,
+      "kind": "lecture",
+      "source_url": "https://gridlab.apmath.spbu.ru/3xx-hpc-2025/hpc-lec05-openmp.pdf",
+      "last_modified_as_listed": "28-Sep-2025 22:00",
+      "listed_bytes": 2036528,
+      "pdf_pages": 78
+    },
+    {
+      "path": "01_Лекции_СПбГУ/hpc-lec06-princ.pdf",
+      "bytes": 489996,
+      "sha256": "2a4faf76a8ec53209c363f53dc6b72d2db4df6b576d8f3fb817754937b9df2fc",
+      "downloaded_at": "2026-10-15T12:05:22.650985+00:00",
+      "last_modified": null,
+      "kind": "lecture",
+      "source_url": "https://gridlab.apmath.spbu.ru/3xx-hpc-2025/hpc-lec06-princ.pdf",
+      "last_modified_as_listed": "18-Nov-2013 04:20",
+      "listed_bytes": 489996,
+      "pdf_pages": 43
+    },
+    {
+      "path": "01_Лекции_СПбГУ/hpc-lec07-mpi-text.pdf",
+      "bytes": 1244845,
+      "sha256": "0ec6ad6df09eee321e1f47fc99f79859173481e71ae6ec3fe889e65e12005fdb",
+      "downloaded_at": "2026-10-15T12:05:23.794914+00:00",
+      "last_modified": null,
+      "kind": "lecture",
+      "source_url": "https://gridlab.apmath.spbu.ru/3xx-hpc-2025/hpc-lec07-mpi-text.pdf",
+      "last_modified_as_listed": "21-Oct-2013 11:10",
+      "listed_bytes": 1244845,
+      "pdf_pages": 35
+    },
+    {
+      "path": "01_Лекции_СПбГУ/hpc-lec07-mpi_1.pdf",
+      "bytes": 1122063,
+      "sha256": "bbb4a9306fa9804c0d27fe851b941a66ab88c4ab0dea84d3605cc9218f9ac28d",
+      "downloaded_at": "2026-10-15T12:05:22.654777+00:00",
+      "last_modified": null,
+      "kind": "lecture",
+      "source_url": "https://gridlab.apmath.spbu.ru/3xx-hpc-2025/hpc-lec07-mpi_1.pdf",
+      "last_modified_as_listed": "31-Mar-2016 07:13",
+      "listed_bytes": 1122063,
+      "pdf_pages": 60
+    },
+    {
+      "path": "01_Лекции_СПбГУ/hpc-lec08-mpi_2.pdf",
+      "bytes": 550546,
+      "sha256": "d5b39098722abc1b28f9947c8e90ed8b38876cc4722dea8d78b03b9570543a12",
+      "downloaded_at": "2026-10-15T12:05:22.654655+00:00",
+      "last_modified": null,
+      "kind": "lecture",
+      "source_url": "https://gridlab.apmath.spbu.ru/3xx-hpc-2025/hpc-lec08-mpi_2.pdf",
+      "last_modified_as_listed": "18-Nov-2013 04:20",
+      "listed_bytes": 550546,
+      "pdf_pages": 50
+    },
+    {
+      "path": "01_Лекции_СПбГУ/hpc-lec08-mpi_3.pdf",
+      "bytes": 422850,
+      "sha256": "974493f01e5b9884119baa7c74438c8d5bb1ffe238d4b20e93621182ec0e32fc",
+      "downloaded_at": "2026-10-15T12:05:22.656769+00:00",
+      "last_modified": null,
+      "kind": "lecture",
+      "source_url": "https://gridlab.apmath.spbu.ru/3xx-hpc-2025/hpc-lec08-mpi_3.pdf",
+      "last_modified_as_listed": "18-Nov-2013 04:20",
+      "listed_bytes": 422850,
+      "pdf_pages": 33
+    },
+    {
+      "path": "02_Программа_и_расписание/077694_Введение в суперкомпьютерные вычисления_у.docx",
+      "bytes": 40826,
+      "sha256": "fecdfb5b5d072f8dfec0d6804815d1d6929583456c5fe1d2b39c1f3c14334de2",
+      "downloaded_at": "2026-10-15T12:05:22.656211+00:00",
+      "last_modified": null,
+      "kind": "attachment",
+      "source_message_url": "https://mail.google.com/mail/u/0/#all/1a12f4c983682a35"
+    },
+    {
+      "path": "02_Программа_и_расписание/26_7802_Учебный_план.pdf",
+      "bytes": 1161527,
+      "sha256": "609c60f95ea987d11d256706307bd2d9dcfa97dca89e972ad6002c753e143e25",
+      "downloaded_at": "2026-10-15T12:05:22.658621+00:00",
+      "last_modified": null,
+      "kind": "attachment",
+      "source_message_url": "https://mail.google.com/mail/u/0/#all/1a12f4c983682a35",
+      "pdf_pages": 26
+    },
+    {
+      "path": "02_Программа_и_расписание/Ташкент, расписание группы 24_7802.xlsx",
+      "bytes": 15396,
+      "sha256": "bf29774bd741f01849af16342aceb13b482b8d13a83a5bca294ba108086926aa",
+      "downloaded_at": "2026-10-15T12:05:22.657437+00:00",
+      "last_modified": null,
+      "kind": "attachment",
+      "source_message_url": "https://mail.google.com/mail/u/0/#all/1a138bdeda9d8c63"
+    },
+    {
+      "path": "02_Программа_и_расписание/расписание преподавателя на неделю - Романычев Л. Р. (23 ноября 2026 - 19 декабря 2026 г. на дату 13.10).xlsx",
+      "bytes": 13891,
+      "sha256": "dee422a194ae1c027cf5877bec0f093cfa9b22f53a1ec08c0dbb9ce4782f3006",
+      "downloaded_at": "2026-10-15T12:05:22.657629+00:00",
+      "last_modified": null,
+      "kind": "attachment",
+      "source_message_url": "https://mail.google.com/mail/u/0/#all/1a138bdeda9d8c63"
+    }
+  ],
+  "verified_on": "2026-10-15",
+  "lecture_pdf_pages": 492
+}

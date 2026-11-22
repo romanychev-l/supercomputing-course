@@ -1,0 +1,35 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\input{../common/fonts.tex}
+\setbeamertemplate{navigation symbols}{}
+\title{Суперкомпьютерные вычисления}
+\subtitle{Шаблон новой презентации — не готовая лекция}
+\author{Автор переноса: укажите имя}
+\date{}
+\begin{document}
+% source-file: none (template)
+% source-page: none
+\begin{frame}
+  \titlepage
+\end{frame}
+% source-page: none (typesetting example)
+\begin{frame}{Пример набора: ускорение}
+  Для доли последовательной работы $0\leq\alpha\leq1$:
+  \[
+    S_N=\frac{1}{\alpha+(1-\alpha)/N}.
+  \]
+  \begin{itemize}
+    \item Предположение: фиксированный объём работы.
+    \item Накладные расходы в этой модели не учитываются.
+    \item При $N=1$ получаем $S_1=1$.
+  \end{itemize}
+\end{frame}
+% source-page: none (contributor checklist)
+\begin{frame}{Перед отправкой PR}
+  Сверьте формулы и схему с изображением исходной страницы.
+  \begin{enumerate}
+    \item Сохраните связь с номером страницы PDF.
+    \item Опишите содержательные исправления отдельно.
+    \item Соберите PDF и проверьте изменённые слайды.
+  \end{enumerate}
+\end{frame}
+\end{document}

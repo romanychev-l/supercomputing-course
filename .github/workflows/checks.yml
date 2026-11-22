@@ -1,0 +1,42 @@
+name: Course checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  materials:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/check_materials.py
+
+  practice:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install compilers and MPI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential mpich libmpich-dev
+      - name: Build and check serial, OpenMP, MPI and DCMT
+        run: make practice
+
+  latex:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install XeLaTeX and fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y latexmk texlive-xetex texlive-latex-recommended texlive-latex-extra texlive-lang-cyrillic texlive-fonts-recommended fonts-dejavu-core
+      - run: make latex
+      - uses: actions/upload-artifact@v4
+        with:
+          name: course-latex-pdfs
+          path: 08_LaTeX/build/**/*.pdf
+          if-no-files-found: error

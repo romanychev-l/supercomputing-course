@@ -1,0 +1,240 @@
+{
+  "date": "2026-10-30",
+  "scope": "Дополнительные проверки; не суммировать с 158 запусками практикума. Численные примеры не являются доказательством всех утверждений курса.",
+  "negative_compiler_probes": [
+    {
+      "case": "parallel_lastprivate",
+      "rejected": true,
+      "diagnostic": [
+        "/private/tmp/hpc-course-review/factcheck-probes/parallel_lastprivate.c:2:22: error: unexpected OpenMP clause 'lastprivate' in directive '#pragma omp parallel'"
+      ]
+    },
+    {
+      "case": "barrier_in_for",
+      "rejected": true,
+      "diagnostic": [
+        "/private/tmp/hpc-course-review/factcheck-probes/barrier_in_for.c:4:1: error: region cannot be closely nested inside 'parallel for' region"
+      ]
+    },
+    {
+      "case": "standalone_copyin",
+      "rejected": true,
+      "diagnostic": [
+        "/private/tmp/hpc-course-review/factcheck-probes/standalone_copyin.c:3:13: error: expected an OpenMP directive"
+      ]
+    },
+    {
+      "case": "single_copyprivate_nowait",
+      "rejected": true,
+      "diagnostic": [
+        "/private/tmp/hpc-course-review/factcheck-probes/single_copyprivate_nowait.c:4:20: error: the 'copyprivate' clause must not be used with the 'nowait' clause"
+      ]
+    },
+    {
+      "case": "MPI_Type_size_with_MPI_Aint_pointer",
+      "rejected": true,
+      "diagnostic": [
+        "/private/tmp/hpc-course-review/factcheck-probes/mpi_wrong_type_size.c:2:52: error: incompatible pointer types passing 'MPI_Aint *' (aka 'long *') to parameter of type 'int *' [-Werror,-Wincompatible-pointer-types]"
+      ]
+    }
+  ],
+  "positive_openmp": {
+    "lastprivate": 99,
+    "copyin": 14,
+    "copyprivate": 22
+  },
+  "mathematical_checks": [
+    {
+      "case": "sum_tree_depth_N=1",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "case": "sum_tree_depth_N=2",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "case": "sum_tree_depth_N=3",
+      "actual": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "case": "sum_tree_depth_N=4",
+      "actual": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "case": "sum_tree_depth_N=5",
+      "actual": 3,
+      "expected": 3,
+      "passed": true
+    },
+    {
+      "case": "sum_tree_depth_N=7",
+      "actual": 3,
+      "expected": 3,
+      "passed": true
+    },
+    {
+      "case": "sum_tree_depth_N=8",
+      "actual": 3,
+      "expected": 3,
+      "passed": true
+    },
+    {
+      "case": "sum_tree_depth_N=17",
+      "actual": 5,
+      "expected": 5,
+      "passed": true
+    },
+    {
+      "case": "sum_tree_depth_N=31",
+      "actual": 5,
+      "expected": 5,
+      "passed": true
+    },
+    {
+      "case": "sum_tree_depth_N=32",
+      "actual": 5,
+      "expected": 5,
+      "passed": true
+    },
+    {
+      "case": "sum_tree_depth_N=101",
+      "actual": 7,
+      "expected": 7,
+      "passed": true
+    },
+    {
+      "case": "pipeline_100_items_5_stages",
+      "actual": 104,
+      "expected": 104,
+      "passed": true
+    },
+    {
+      "case": "Amdahl_alpha_0.1_p8",
+      "actual": 4.705882352941176,
+      "expected": 4.705882352941177,
+      "passed": true
+    },
+    {
+      "case": "Amdahl_alpha_0.05_p20",
+      "actual": 10.256410256410255,
+      "expected": 10.256410256410257,
+      "passed": true
+    },
+    {
+      "case": "Roofline_120GBs_24bytes",
+      "actual": 5000000000.0,
+      "expected": 5000000000.0,
+      "passed": true
+    },
+    {
+      "case": "message_100B_seconds",
+      "actual": 5.1e-06,
+      "expected": 5.1e-06,
+      "passed": true
+    },
+    {
+      "case": "message_100000B_seconds",
+      "actual": 0.000105,
+      "expected": 0.000105,
+      "passed": true
+    },
+    {
+      "case": "sum_0_to_99",
+      "actual": 4950,
+      "expected": 4950,
+      "passed": true
+    },
+    {
+      "case": "dot_2_times_squares",
+      "actual": 656700,
+      "expected": 656700,
+      "passed": true
+    },
+    {
+      "case": "peta_to_base",
+      "actual": 1.0,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "case": "energy_200W_10seconds_J",
+      "actual": 2000,
+      "expected": 2000,
+      "passed": true
+    },
+    {
+      "case": "total_seconds_after_kernel_speedup4",
+      "actual": 55.0,
+      "expected": 55,
+      "passed": true
+    },
+    {
+      "case": "total_speedup_100_over_55",
+      "actual": 1.8181818181818181,
+      "expected": 1.8181818181818181,
+      "passed": true
+    },
+    {
+      "case": "matvec_checksum_N=1",
+      "actual": 2,
+      "expected": 2.0,
+      "passed": true
+    },
+    {
+      "case": "matvec_checksum_N=2",
+      "actual": 9,
+      "expected": 9.0,
+      "passed": true
+    },
+    {
+      "case": "matvec_checksum_N=3",
+      "actual": 24,
+      "expected": 24.0,
+      "passed": true
+    },
+    {
+      "case": "matvec_checksum_N=17",
+      "actual": 2754,
+      "expected": 2754.0,
+      "passed": true
+    },
+    {
+      "case": "sum_efficiency_T1_12_T4_4",
+      "actual": 0.75,
+      "expected": 0.75,
+      "passed": true
+    },
+    {
+      "case": "scan_stages_N=1",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "case": "scan_stages_N=3",
+      "actual": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "case": "scan_stages_N=17",
+      "actual": 5,
+      "expected": 5,
+      "passed": true
+    },
+    {
+      "case": "independent_exponential_survival",
+      "actual": 0.8607079764250577,
+      "expected": 0.8607079764250578,
+      "passed": true
+    }
+  ]
+}

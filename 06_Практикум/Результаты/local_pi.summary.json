@@ -1,0 +1,36 @@
+{
+  "mode": "pi",
+  "n": 10000000,
+  "seq_seconds": 0.0159810001,
+  "omp1_seconds": 0.0183999538,
+  "results": [
+    {
+      "threads": 1,
+      "median_seconds": 0.0183999538,
+      "min_seconds": 0.0179769993,
+      "max_seconds": 0.0185251236,
+      "speedup_vs_seq": 0.8685347949080177,
+      "speedup_vs_omp1": 1.0,
+      "efficiency_vs_omp1": 1.0
+    },
+    {
+      "threads": 2,
+      "median_seconds": 0.00933980942,
+      "min_seconds": 0.00916290283,
+      "max_seconds": 0.00956320763,
+      "speedup_vs_seq": 1.7110627617067589,
+      "speedup_vs_omp1": 1.970056665246174,
+      "efficiency_vs_omp1": 0.985028332623087
+    },
+    {
+      "threads": 4,
+      "median_seconds": 0.00489783287,
+      "min_seconds": 0.00473213196,
+      "max_seconds": 0.00496006012,
+      "speedup_vs_seq": 3.262871666750033,
+      "speedup_vs_omp1": 3.7567541172551278,
+      "efficiency_vs_omp1": 0.9391885293137819
+    }
+  ],
+  "repeats": 5
+}

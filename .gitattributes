@@ -1,0 +1,15 @@
+* text=auto
+*.md text eol=lf
+*.tex text eol=lf
+*.py text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+*.cpp text eol=lf
+*.sbatch text eol=lf
+*.pdf binary
+*.docx binary
+*.xlsx binary
+*.png binary
+*.tgz binary
+04_Источники/index.html -text
+06_Практикум/Результаты/*.csv -text

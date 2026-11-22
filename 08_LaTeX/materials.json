@@ -1,0 +1,102 @@
+[
+  {
+    "id": "01-history",
+    "title": "История и рейтинги",
+    "kind": "slides",
+    "source": "01_Лекции_СПбГУ/hpc-lec01-02.pdf",
+    "pages": 96,
+    "notes": "05_Конспекты/01_История_и_рейтинги_с_переводом.md",
+    "target": "08_LaTeX/01-history/main.tex",
+    "status": "planned"
+  },
+  {
+    "id": "02-architecture",
+    "title": "Архитектуры и память",
+    "kind": "slides",
+    "source": "01_Лекции_СПбГУ/hpc-lec03.pdf",
+    "pages": 29,
+    "notes": "05_Конспекты/02_Архитектуры_и_память_с_переводом.md",
+    "target": "08_LaTeX/02-architecture/main.tex",
+    "status": "planned"
+  },
+  {
+    "id": "03-networks",
+    "title": "Сети и ускорение",
+    "kind": "slides",
+    "source": "01_Лекции_СПбГУ/hpc-lec04.pdf",
+    "pages": 19,
+    "notes": "05_Конспекты/03_Сети_и_ускорение_с_переводом.md",
+    "target": "08_LaTeX/03-networks/main.tex",
+    "status": "planned"
+  },
+  {
+    "id": "04-openmp",
+    "title": "OpenMP",
+    "kind": "slides",
+    "source": "01_Лекции_СПбГУ/hpc-lec05-openmp.pdf",
+    "pages": 78,
+    "notes": "05_Конспекты/04_OpenMP_с_переводом.md",
+    "target": "08_LaTeX/04-openmp/main.tex",
+    "status": "planned"
+  },
+  {
+    "id": "05-design",
+    "title": "Проектирование параллельных алгоритмов",
+    "kind": "slides",
+    "source": "01_Лекции_СПбГУ/hpc-lec06-princ.pdf",
+    "pages": 43,
+    "notes": "05_Конспекты/05_Проектирование_параллельных_алгоритмов_с_переводом.md",
+    "target": "08_LaTeX/05-design/main.tex",
+    "status": "planned"
+  },
+  {
+    "id": "06-mpi-basics",
+    "title": "MPI: основы",
+    "kind": "slides",
+    "source": "01_Лекции_СПбГУ/hpc-lec07-mpi_1.pdf",
+    "pages": 60,
+    "notes": "05_Конспекты/06_MPI_Основы.md",
+    "target": "08_LaTeX/06-mpi-basics/main.tex",
+    "status": "planned"
+  },
+  {
+    "id": "07-mpi-types",
+    "title": "MPI: обмены и типы",
+    "kind": "slides",
+    "source": "01_Лекции_СПбГУ/hpc-lec08-mpi_2.pdf",
+    "pages": 50,
+    "notes": "05_Конспекты/07_MPI_Обмены_и_типы.md",
+    "target": "08_LaTeX/07-mpi-types/main.tex",
+    "status": "planned"
+  },
+  {
+    "id": "08-mpi-topologies",
+    "title": "MPI: коммуникаторы и топологии",
+    "kind": "slides",
+    "source": "01_Лекции_СПбГУ/hpc-lec08-mpi_3.pdf",
+    "pages": 33,
+    "notes": "05_Конспекты/08_MPI_Коммуникаторы_и_топологии.md",
+    "target": "08_LaTeX/08-mpi-topologies/main.tex",
+    "status": "planned"
+  },
+  {
+    "id": "09-openmp-handout",
+    "title": "Текстовое пособие OpenMP",
+    "kind": "handout",
+    "source": "01_Лекции_СПбГУ/hpc-lec05-openmp-text.pdf",
+    "pages": 49,
+    "notes": "05_Конспекты/09_OpenMP_Текстовое_пособие.md",
+    "target": "08_LaTeX/09-openmp-handout/main.tex",
+    "status": "planned"
+  },
+  {
+    "id": "10-mpi-handout",
+    "title": "Текстовое пособие MPI",
+    "kind": "handout",
+    "source": "01_Лекции_СПбГУ/hpc-lec07-mpi-text.pdf",
+    "pages": 35,
+    "notes": "05_Конспекты/10_MPI_Текстовое_пособие.md",
+    "target": "08_LaTeX/10-mpi-handout/main.tex",
+    "status": "planned"
+  }
+]

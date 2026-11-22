@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-30",
+  "files": [
+    {
+      "path": "04_Источники/Справочники/OpenMP_6_Reference_Guide.pdf",
+      "source_url": "https://www.openmp.org/wp-content/uploads/OpenMPRefCard-6-r7-2026-web.pdf",
+      "bytes": 1316189,
+      "sha256": "caae7f6afb297907b653c9137181b86e3ceddf3bffd5e8c9ac76289609132b0f"
+    },
+    {
+      "path": "06_Практикум/Внешние_библиотеки/dcmt0.6.2.tgz",
+      "source_url": "https://www.math.sci.hiroshima-u.ac.jp/m-mat/MT/DC/dcmt0.6.2.tgz",
+      "bytes": 20620,
+      "sha256": "1bccfb9a05b4782f8afc21d5651cc613d8e35d606190959e56ea3fd496ccfdaf"
+    }
+  ]
+}
